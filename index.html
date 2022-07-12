@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Customer Churn Prediction - Recursive Searchers</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v4.7.1
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+     <a href="index.html" class="logo me-auto"><img src="assets/img/ai.png" alt="" class="img-fluid"></a>
+
+      <h1 class="logo me-auto"><a href="index.html">Customer Churn Prediction</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+ 
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <br>
+          <h1>Customer Churn Predictor</h1>
+          <h2>An accurate predictor for companies</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+<!--             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+<!--           img {
+            width: 100%;
+            height: 100%;
+          } -->
+          <img src="assets/img/ccp.png" width="600" height="140">
+          <!-- width="250" height="190" -->
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+
+           <h2>What is Customer Churn Prediction</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+             
+One of the most important applications of data science in the commercial sector is churn prediction. Its popularity stems from the fact that its impacts are more tangible to comprehend, and it plays a significant role in the company's overall revenues.
+            </p>
+            <br>
+            <ul>
+              <p> Churn is described as "when a client cancels a subscription to a service they have been utilizing" in business terms. People cancelling Spotify/Netflix memberships are a regular example. So, based on their utilization of the service, Churn Prediction is effectively projecting which clients are most likely to cancel a subscription, i.e. 'leave a company.'. </p>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              From a business standpoint, obtaining this information is critical because recruiting new clients is generally more difficult and costly than retaining existing customers. As a result, the information acquired through Churn Prediction allows them to focus more on the customers who are most likely to leave.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cliens Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              We are a group of high school students working on machine learning models that predict if a customer will leave or not leave a company.
+            </p>
+            <br>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Decision Tree, and XG Boost were just a couple of the machine learning models used. </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              AI Camp has provided us with the resources we needed to make this model and website that works right along side it.
+            </p>
+            <a href="#" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-12 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3> <strong>EDA</strong></h3>
+              <p>
+                EDA which stands for exploratory data analysis is one of the most important steps in the field of data science. While it allows a data scientist to understand their data better, it's also important in the machine learning process, as it allows a data scientist to find which variables are most important or find which variables can be removed to clean the dataset.</p>
+      
+<!-- COLUMN INFORMATION -->
+<ul>
+  <li>Exited : The target variable </li>
+  <li>Credit Score : What the customers credit score is</li>
+  <li>Gender : The customers gender</li>
+   <li>Geography : What country the customer lives in</li>
+   <li>Age : The age of the customer</li>
+   <li>Estimated Salary : The estimated salary of the customer</li>
+   <li>Is Active Member : If the customer is an active member or not</li>
+  <li>Has Credit Card : Whether the customer has a credit card or not</li>
+  <li>Number of Products : How many products the customer bought</li>
+  <li>Balance : The customers balance</li>
+  <li>Tenure : How many years the customer has stayed with the company</li>
+</ul>  
+                <br>
+              <br>
+                
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>Correlation Heat Map </span> <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      First thing our group did in our EDA notebook, was create a correlation heatmap so we could better understand which variables to focus on and the dataset as a whole.
+                    </p>
+                     <iframe width="1000" height="600" title="Correlation Table of Features" src="assets/HeatmapGlebik.html"></iframe>
+                  </div>
+         
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>Scatter Plot Correlations</span> <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                    Here we created a scatter plot to show the correlations between 3 different variables. On our Correlation Heat Map these three items had the highest correlation.
+                    </p>
+                      <iframe width="1000" height="600" title="Correlation Table of Features" src="assets/Scatplt,Age,Bal,Chur.html"></iframe>
+                    
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>Pie Chart</span> <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                     This pie chart shows the amount of exited to non-exited customers. Exited is in red while non-exited is in purple.
+  <iframe width="1000" height="600" title="Correlation Table of Features" src="assets/pie.html"></iframe>
+                       
+
+                    </p>
+<!--                      <iframe width="600" height="600" title="Correlation Table of Features" src="assets/log_reg_dt.html"></iframe> -->
+                  </div>
+                </li>
+ <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>Countplot</span>  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                    Here from a few of these countplots you can see simple comparisons between two categories. From this you can see how our data compares to each other.
+                    </p>
+                    <p>
+                      <iframe width="1000" height="600" title="Correlation Table of Features" src="assets/gender,exited.html"></iframe>
+                      
+                    </p>
+                    <p>
+                      <iframe width="1000" height="600" title="Correlation Table of Features" src="assets/Active,Exited.html"></iframe>
+                    </p>
+                    <p>
+                      <iframe width="1000" height="600" title="Correlation Table of Features" src="assets/geo,exited.html"></iframe>
+                    </p>
+                  </div>
+                </li>
+                 
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-5" class="collapsed"><span>Box plots</span> <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-5" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                    
+                    </p>
+                    <p>
+                      <iframe width="1000" height="600" title="Correlation Table of Features" src="assets/boxplt.html"></iframe>
+</p>
+
+                  </div>
+                </li>
+                
+<!--                 <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-6" class="collapsed"><span>Box plots</span> <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-6" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      We use Random Forest Classification in order to address the issue of over fitting that a single tree may exhibit by using multiple decision trees to vote on the most common classification. They're generally more accurate, though also more memory-consuming than single decision trees.
+</p>
+                     
+                  </div>
+                </li> -->
+                
+              </ul>
+            
+
+          </div>
+          </div>
+        </div>
+      </div>
+<!--           <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div> -->
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Machine Learning Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+                 <h1>
+         Modeling
+        </h1>
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/skills.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>Machine Learning Recall Rates:</h3>
+            <p class="fst-italic">
+               Over the course of our customer churn analysis we used machine learning to see if the customer would stay with the bank, or leave. Through the use of Support Vector Classification (SVM) we have gotten the highest recall value to ensure that you get the most accurate result.
+            </p>
+
+            <div class="skills-content">
+
+              <div class="progress">
+                <span class="skill">SVM <i class="val">93%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Random Forest <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Decision Tree <i class="val">73%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">XG Boost <i class="val">65%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Here we are working on creating a product that can help both large and small companies. We want to help YOU to achieve your full potential. We want your company to succeed and that will be made possible with our customer churn data. Bellow you will see our different services for you to be able to better pick which one you would like to use.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Support Vector Classification</a></h4>
+              <p>Support Vector Classification makes sure that you succeed by having the highest recall rate. To put into laymen terms Support Vector Classification is a very smart machine that uses these classification algorithms to get you the most reliable data. Since this had the highest success rate (93%) it is also our most expensive yet most reliable option. This is recommended for large companies that use subscription service and online services. </p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Random Forest</a></h4>
+              <p>Random Forest is another powerful machine learning model that uses multiple decision trees from the Decision Tree model to predict an outcome. Since this is our second best product it is also our one of our second most reliable model (90%) and is recommended for subscription based companies.</p>
+               
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Decision Tree</a></h4>
+              <p>Decision Trees are a bunch of true or false statements that rely on classification questions. This product should be used by small to medium companies that use online services and want to cater ads to a certain demographic. Since this machine was given our third highest success rate certification this is also our base option.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4><a href="">XG Boosting</a></h4>
+              <p>XG Boosting is gradient boosted Decision trees. This was one of our lowest success rate of the four and as a result we recommend this to small companies that want to get into online retailing. This way you can try and cater your ads to a demographic that is interested in your product. Since this has the lowest success rate it is also considered our budget option.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Our Machine Learning Models</h3>
+                      <br>
+          <br>
+            <h3>XG Boost</h3>
+            <p>
+              XGBoost is an extension to gradient boosted decision trees (GBM) and specially designed to improve speed and performance. It implements Machine Learning algorithms under the Gradient Boosting framework, and  it provides parallel tree boosting to solve many data science problems in a fast and accurate way. 
+            </p>
+            <br>
+          <div>
+            <center>
+            <img src="assets/img/img_xg.jpeg" width="350" height = "350">
+              </center>
+          </div>
+            <iframe width="600" height="600" title="Correlation Table of Features" src="assets/xg_reg_cf.html"></iframe>
+          </div>
+          <br>
+          <br>
+           <h3>Random Forest Classifier</h3>
+          <p>
+            We use Random Forest Classification in order to address the issue of 'overfitting' that a single tree may exhibit; so by using multiple decision trees it's able to vote on the most common classification. Random forest uses a technique called bagging to build full decision trees in parallel from random bootstrap samples of the data set. The final prediction is an average of all of the decision tree predictions. They're generally more accurate than single decision trees, but also more memory-consuming.
+
+          </p>
+          <br>
+          <div>
+            <center>
+            <img src="assets/img/img_rf.jpeg" width="350" height = "350">
+              </center>
+          </div>
+           <iframe width="600" height="600" title="Correlation Table of Features" src="assets/log_reg_rfc.html"></iframe>
+                  <br>
+          <br>
+          <h3>Decision Tree Classifier</h3>
+          <p>
+            Decision Tree Classifier builds branches of if-else statements in a hierarchy, and develops the data by dividing it based on the data's most important features, which makes it simpler and easier to understand, but sometimes decision trees can contain algorithms that become too complex to calculate. 
+          </p>
+          <br>
+          <div>
+            <center>
+            <img src="assets/img/img_dt.jpeg" width="350" height = "350">
+              </center>
+          </div>
+           <iframe width="600" height="600" title="Correlation Table of Features" src="assets/log_reg_dt.html"></iframe>
+          <h3>Support Vector Classifier</h3>
+          <p>
+            Support Vector Classifier uses an algorithm that splits the data given apart on a border called the hyperplane, separating the data into classes, which can make it capture complex relationship between certain features in our data. 
+          </p>
+          <br>
+          <div>
+            <center>
+            <img src="assets/img/img_svm.jpeg" width="350" height = "350">
+              </center>
+          </div>
+          <br>
+          <br>
+          <iframe width="600" height="600" title="Correlation Table of Features" src="assets/log_reg_cf.html"></iframe>
+          <div class="col-lg-3 cta-btn-container text-center">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Conclusion</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              In conclusion, focusing more on the recall, SVM clearly performed the best on our dataset for predicting If customer is going to churn or not. In terms of important features, we used all the features In the correlation map, we  didn't saw any specific feature with high correlation with the target variable or multicollinearity in the data.
+               There could be multiple reason of churn in a customer like sqitching to the conpetitor, missing functionality, Poor customer fit, etc. If possible we can explore more and add the data where we could find the reason of the churn and then perform Descriptive Data Analysis for more information and insights about the customers in an organization.
+            </p>
+            <br>
+            <ul>
+              <h2>So what?</h2>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+             Our product can help companies to understand what should they improve, to get more customers. It can help to make better commercials, based for example on region, or on preferences in the certain areas. Overall, our product is targeted on improving interest of people to the certain business. 
+
+            </p>
+            
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Our team members who worked on the project.</p>
+        </div>
+
+        <div class="row">
+          
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="assets/Keshav.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Keshav Likhar</h4>
+                <span>Mentor of the Recursive Searchers Team</span>
+                <p>Social Media</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/Sus.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Aedan Bingham</h4>
+                <span>AI Camp Student.</span>
+                <p>Social Media</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Aakriti Mishra</h4>
+                <span>AI Camp Student</span>
+                <p>Social Media</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Matthew Guerra</h4>
+                <span>AI camp student.</span>
+                <p>Social Media</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Eric Baber </h4>
+                <span>Ai Camp Student.</span>
+                <p>Social Media</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Yoonchul Shin</h4>
+                <span>AI Camp Student. </span>
+                <p>Social Media</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+            <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Gleb Miroshnikov</h4>
+                <span>AI Camp Student. </span>
+                <p>Social Media</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>2627 Hanover Street,
+Palo Alto, CA 94304</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>hello@ai-camp.org</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+(650) 436-4477</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>AI Camp</h3>
+            <p>
+              2627 Hanover Street,<br>
+Palo Alto, CA 94304 <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> (650) 436-4477<br>
+              <strong>Email:</strong> hello@ai-camp.org <br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
